@@ -20,7 +20,7 @@ ENV NODE_ENV=production
 ## add xxx.js /home/admin
 ADD /out/index.js /home/admin
 
-## specify the workdir, xxx.js 放哪就指定到哪
+## specify the workdir, xxx.js dir
 WORKDIR /home/admin
 
 CMD ["/home/admin/entrypoint.sh"]
