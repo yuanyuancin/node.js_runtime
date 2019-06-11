@@ -18,9 +18,10 @@ ENV NODE_ENV=production
 
 ## TODO: ADD the code built by `build.sh`
 ## add xxx.js /home/admin
+ADD /out/index.js /home/admin
 
 ## specify the workdir, xxx.js 放哪就指定到哪
-WORKDIR /where-is-the-code
+WORKDIR /home/admin
 
 CMD ["/home/admin/entrypoint.sh"]
 
