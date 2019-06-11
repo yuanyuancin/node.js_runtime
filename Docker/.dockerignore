@@ -1,0 +1,6 @@
+test-resources/
+build.sh
+build-test.sh
+build-test-csd.sh
+.last-built-image
+.gitignore
