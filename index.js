@@ -11,4 +11,11 @@ const waitForCode = require('./lib/waitForCode');
     eval("require")(codePath);
     var hello = require('./hello.js');
     hello.world();
+
+
+    const startTimePath = path.join(process.env.SOFASTACK_SAS_RUNTIME_STATE_DIR, 'start_time');
+    await mkdirp(path.dirname(startTimePath));
+    await fs.writeFile(startTimePath, Math.floor(new Date() / 1000));
+
+
 })();
